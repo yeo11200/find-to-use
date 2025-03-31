@@ -1,0 +1,53 @@
+{
+  "name": "find-to-use",
+  "version": "1.0.9",
+  "description": "파일을 열심히 찾아서 문서로 작성해준다.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeo11200/find-to-use.git"
+  },
+  "keywords": [
+    "search",
+    "file-search",
+    "code-search",
+    "text-search",
+    "markdown",
+    "report-generator",
+    "file-scanner",
+    "directory-scanner",
+    "code-analysis",
+    "text-analysis",
+    "file-analysis",
+    "directory-analysis",
+    "recursive-search",
+    "file-system",
+    "fs",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "typescript": "^5.8.2"
+  }
+}
